@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Table {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		boolean loop = true;
+		
+		while(loop) {
+			getInput(in);
+			System.out.print("\nContinue? (y/n): ");
+			if(in.next().equalsIgnoreCase("n")) {
+				loop = false;
+			}
+		}
+		
+		in.close();
+		return;
+	}
+	
+	public static void getInput(Scanner in) {
+		int num = -1;
+		System.out.print("\nEnter an integer: ");
+		num = in.nextInt();
+		printTable(num);
+		
+	}
+	
+	public static void printTable(int num) {
+		
+		System.out.println("Number\tSquared\tCubed");
+		System.out.println("======\t=======\t=====");
+		
+		for(int i = 1; i <= num; i++) {
+			System.out.print(i);
+			System.out.print("\t" + (i*i));
+			System.out.println("\t" + (i*i*i));
+		}
+		
+	}
+
+}

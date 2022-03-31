@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Table {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		int num = -1;
+		
+		printTable(4);
+		
+		//boolean loop = true;
+		
+		
+
+	}
+	
+	// Print 
+	public static void printTable(int num) {
+		
+		System.out.println("Number\tSquared\tCubed");
+		System.out.println("======\t=======\t=====");
+		
+		for(int i = 1; i <= num; i++) {
+			System.out.print(i);
+			System.out.print("\t" + (i*i));
+			System.out.println("\t" + (i*i*i));
+		}
+		
+	}
+
+}
