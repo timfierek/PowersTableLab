@@ -29,15 +29,16 @@ public class Table {
 	
 	public static void printTable(int num) {
 		
-		System.out.printf("%-8s", "Number");
-		System.out.printf("%-9s", "Squared");
-		System.out.printf("%-7s%n", "Cubed");
-		System.out.printf("%-8s%-9s%-7s%n", "======", "=======", "=====");
+		System.out.printf("%8s", "Number");
+		System.out.printf("%9s", "Squared");
+		System.out.printf("%7s", "Cubed\n");
+		//System.out.println("Number\tSquared\tCubed");
+		//System.out.println("======\t=======\t=====");
 		
 		for(int i = 1; i <= num; i++) {
-			System.out.printf("%-8d", i);
-			System.out.printf("%-9d", (i*i));
-			System.out.printf("%-7d%n", (i*i*i));
+			System.out.print(i);
+			System.out.print("\t" + (i*i));
+			System.out.println("\t" + (i*i*i));
 		}
 		
 	}

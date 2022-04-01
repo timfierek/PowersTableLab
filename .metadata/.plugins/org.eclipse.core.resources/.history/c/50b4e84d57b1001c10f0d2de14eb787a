@@ -32,7 +32,8 @@ public class Table {
 		System.out.printf("%-8s", "Number");
 		System.out.printf("%-9s", "Squared");
 		System.out.printf("%-7s%n", "Cubed");
-		System.out.printf("%-8s%-9s%-7s%n", "======", "=======", "=====");
+		//System.out.println("Number\tSquared\tCubed");
+		//System.out.println("======\t=======\t=====");
 		
 		for(int i = 1; i <= num; i++) {
 			System.out.printf("%-8d", i);
